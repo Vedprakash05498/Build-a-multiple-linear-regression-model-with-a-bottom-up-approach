@@ -1,4 +1,5 @@
 # Build-a-multiple-linear-regression-model-with-a-bottom-up-approach
+# Steps
 
 # 1.
 Define the problem and the research question: Start by defining the problem and the research question that you are trying to answer with the multiple linear regression model. For example, you might be interested in predicting the sales of a product based on several explanatory variables.
@@ -8,7 +9,7 @@ Collect data: Collect the data that you will use to build the model. You should 
 
 # 3.
 Explore the data: Explore the data to get an idea of its distribution, relationship between the variables, outliers, missing values, etc. You can use descriptive statistics, scatter plots, histograms, correlation matrices, and other techniques to explore the data.
-# Steps
+
 # 4.
 Choose a subset of variables: Based on the exploration of the data, choose a subset of variables that you think might be useful in predicting the dependent variable. Start with a small number of variables to keep the model simple.
 
