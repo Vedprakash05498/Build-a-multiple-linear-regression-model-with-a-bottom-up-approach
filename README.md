@@ -32,4 +32,34 @@ Test the model: Finally, test the model on new data to see how well it performs 
 
 
 
+# Code
+# import required libraries
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+
+# load the dataset
+data = pd.read_csv("your_dataset.csv")
+
+# define the predictor and response variables
+X = data[["predictor_variable_1", "predictor_variable_2", "predictor_variable_3"]] # update the column names with your predictor variables
+Y = data["response_variable"] # update the column name with your response variable
+
+# fit the multiple linear regression model
+model = sm.OLS(Y, sm.add_constant(X)).fit()
+
+# print the model summary
+print(model.summary())
+
+
+# In the code above,
+
+we first import the required libraries including pandas, numpy, and statsmodels. We then load the dataset into a pandas DataFrame object and define the predictor variables (X) and response variable (Y) based on the column names of the dataset.
+
+Next, we fit the multiple linear regression model using the OLS (ordinary least squares) method from the statsmodels library. We pass the response variable (Y) and predictor variables (X) to the OLS function, along with an intercept term using the sm.add_constant function. The resulting model is stored in the model variable.
+
+Finally, we print the summary of the model using the summary() function, which provides detailed information on the model's performance, including the coefficient estimates, standard errors, t-values, and p-values for each predictor variable, as well as measures of overall model fit such as R-squared and the F-statistic.
+
+
+
 
