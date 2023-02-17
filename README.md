@@ -38,21 +38,29 @@ building a multiple linear regression model is an iterative process, and you may
 
 # Code
 # import required libraries
+
 import pandas as pd
+
 import numpy as np
+
 import statsmodels.api as sm
 
 # load the dataset
+
 data = pd.read_csv("your_dataset.csv")
 
 # define the predictor and response variables
+
 X = data[["predictor_variable_1", "predictor_variable_2", "predictor_variable_3"]] # update the column names with your predictor variables
+
 Y = data["response_variable"] # update the column name with your response variable
 
 # fit the multiple linear regression model
+
 model = sm.OLS(Y, sm.add_constant(X)).fit()
 
 # print the model summary
+
 print(model.summary())
 
 we first import the required libraries including pandas, numpy, and statsmodels. We then load the dataset into a pandas DataFrame object and define the predictor variables (X) and response variable (Y) based on the column names of the dataset.
